@@ -1,0 +1,34 @@
+body{
+    background-image: url("imagestask3/background.png");
+    background-size:cover;
+}
+.logobar{
+    display:flex;
+    gap:251px;
+    align-items:center;
+    margin-left: 185.5px;
+    margin-right: 196.5px;
+    width:1110px;
+}
+.accountsection{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.accountsection > div{
+    padding-bottom: 0;
+}
+.accountsection > div::after{
+    content:'|';
+    padding-left: 15px;
+}
+.navigationbar{
+    display:flex;
+    gap:30px;
+    background-color:grey;
+    padding: 8px 196.5px;
+    width:1110px;
+}
+.offersbar{
+    
+}
