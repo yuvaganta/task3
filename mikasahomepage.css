@@ -18,17 +18,125 @@ body{
 .accountsection > div{
     padding-bottom: 0;
 }
-.accountsection > div::after{
-    content:'|';
+
+.accountsection > div:not(:last-child)::after{
+    content: '|';
     padding-left: 15px;
 }
 .navigationbar{
     display:flex;
-    gap:30px;
-    background-color:grey;
+    gap:10px;
+    background-color:rgb(215, 215, 213);
     padding: 8px 196.5px;
     width:1110px;
+    font-family: verdana;
+    font-size:15px;
+    align-items:center;
+}
+.navigationbar .navigationitem:not(:last-child){
+    border-right: 1px solid white;
+    padding-right: 10px;
 }
 .offersbar{
+    display:flex;
+    margin-right: 196.5px;
+    margin-left:196.5px;
+    gap:230px;
+    font-family:'Yu gothic';
+    align-items:center;
+    color:rgb(57,69,106);
+   
+}
+.offerbarouter{
+    border-bottom: 1px solid gray;
+}
+.offers{
+    align-items:center;
+    display:flex;
+    gap:35px;
+}
+.bridalimage{
+    padding: 0 15px;;
+}
+.bridalregistry{
+position: relative;
+bottom: 13px;
+left: 15px;
+}
+.about{
+    display:flex;
+    margin-right: 196.5px;
+    margin-left:196.5px;
+    gap:90px;
+    border: 10px solid white;
+    margin-top: 9px;
+}
+.tableimage{
+    margin-bottom:0;
+    margin-right: -89px;
+  
+    padding-bottom: 0;
+    flex-grow: 4;
+    border-right: 8px solid white;
+}
+.tableimage > img{
+    object-fit: fill;
+    width: 780px;
+    height: 530px;
+    padding-bottom: 0;
+}
+.dressyourtable{
+    background-color:rgb(55,54,52); 
+    color:white;
+    padding:40px;
+    width:230px;
+    font-family:'Yu gothic';
+    position: relative;
+}
+.dressyourtable::after{
+    border: 1px solid white;
+    content:'';
+    position:absolute;
+    top:6px;
+    bottom:6px;
+    right: 6px;
+    left: 6px;
+}
+.dressyourtable > h2{
+    font-weight: lighter;
+    font-size: 31px;
+    padding-top: 0;
+}
+.typeoftables:not(:last-child){
+    border-bottom:1px groove white;
+    margin-left: 0;
+}
+.typeoftables{
+    padding-bottom: 5px;
+    padding-top:5px;
+}
+.collection{
+    display:flex;
+    margin-right: 196.5px;
+    margin-left:196.5px;
+    background-color: white;
+    border:8px solid rgba(0,0,0,0.93);
+    gap:30px;
+    font-family:'Yu gothic';
     
+}
+#frames{
+    display:flex;
+    padding-left: 20px;
+}
+
+#glasses{
+    padding-left: 50px;
+}
+.foot{
+    display:flex;
+    margin-right: 196.5px;
+    margin-left:196.5px;
+    gap:180px;
+    padding-top: 10px;
 }
