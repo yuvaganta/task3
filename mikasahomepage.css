@@ -4,11 +4,11 @@ body{
 }
 .logobar{
     display:flex;
-    gap:325px;
+    gap:333px;
     align-items:center;
-    margin-right: 176.5px;
-    margin-left:166.5px;
-    width:1149px;
+    margin-right: 176px;
+    margin-left:166px;
+    width:1160px;
 }
 .accountsection{
     display:flex;
@@ -27,13 +27,22 @@ body{
     display:flex;
     gap:15px;
     background-color:rgb(215, 215, 213);
-    padding: 3px 176.5px;
+    padding: 3px 176px;
     width:1160px;
     font-family: verdana;
     font-size:13.6px;
     height:35px;
     align-items:center;
-    
+    position: relative;
+}
+.navigationbar::after{
+    border: 1px solid rgb(215, 215, 213);
+    content: '';
+    position:absolute;
+    top:-4px;
+    bottom:-4px;
+    right: 0px;
+    left: 0px;
 }
 .navigationbar{
     border-bottom:1px solid rgb(215, 215, 213);
@@ -57,9 +66,9 @@ body{
 }
 .offersbar{
     display:flex;
-    margin-right: 176.5px;
-    margin-left:176.5px;
-    gap:230px;
+    margin-right: 176px;
+    margin-left:176px;
+    gap:219px;
     font-family:'Yu gothic';
     align-items:center;
     color:rgb(57,69,106);
@@ -79,25 +88,26 @@ body{
     
 }
 .bridalimage{
-    padding: 0 15px;;
+    height:40px;
+    padding-top:5px;
 }
-.bridalregistry{
-position: relative;
-bottom: 13px;
-left: 15px;
+.bridalcontainer{
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 .about{
     display:flex;
-    margin-right: 176.5px;
-    margin-left:176.5px;
+    margin-right: 176px;
+    margin-left:176px;
     gap:90px;
+    height:530px;
     border: 10px solid white;
     margin-top: 9px;
 }
 .tableimage{
     margin-bottom:0;
     margin-right: -89px;
-  
     padding-bottom: 0;
     flex-grow: 4;
     border-right: 8px solid white;
@@ -129,6 +139,7 @@ left: 15px;
     font-weight: lighter;
     font-size: 31px;
     padding-top: 0;
+    margin-top:10px;
 }
 .typeoftables:not(:last-child){
     border-bottom:1px groove darkgray;
@@ -151,18 +162,37 @@ left: 15px;
 }
 .collection{
     display:flex;
-    margin-right: 176.5px;
-    margin-left:176.5px;
+    margin-right: 176px;
+    margin-left:176px;
     background-color: white;
     border:8px solid rgba(0,0,0,0.93);
     gap:18px;
     height: 196px;
     font-family:'Yu gothic';
-    font-size:15px;
+    font-size:13px;
+    line-height: 20px;
 }
+.collectionparas{
+    color:gray;
+}
+.collectionheads{
+    font-size:17px;
+    font-weight:460;
+}
+.stemware , .homeaccents , .clearanceitems{
+    font-size:15px;
+    color:rgb(57,69,106);
+    }
 #frames{
 
     width:380px;
+}
+.frameimg{
+    height:180px;
+}
+.plateimage{
+    width:360px;
+    height:120px;
 }
 #plates{
     width:380px;
@@ -173,11 +203,15 @@ left: 15px;
     padding-top:30px;
 }
 #glasses ,#plates{
-    border-right: 1px solid grey;
+    border-right: 1px solid darkgrey;
 }
 #glasses > img{
     position: absolute;
-    bottom: -185px;
+    bottom: -184px;
+    left: 193px;
+    width: 337px;
+    height: 170px;
+
 }
 .stemware{
     position: relative;
@@ -185,7 +219,7 @@ left: 15px;
 }
 .glassmatter{
     position: absolute;
-    bottom: -126px;
+    bottom: -125px;
 }
 .platematter{
     position: absolute;
@@ -193,7 +227,8 @@ left: 15px;
 }
 #plates > img{
     position: absolute;
-    bottom: -185px;
+    bottom: -184px;
+    left:570px;
 }
 .homeaccents{
     position: relative;
@@ -201,16 +236,41 @@ left: 15px;
 }
 #frames > img{
     position: absolute;
-    right: 194px;
-    bottom: -171px;
+    right: 192px;
+    bottom: -184px;
+}
+.framesmatter{
+    position:relative;
 }
 .foot{
     display:flex;
     color:darkgray;
-    margin-right: 176.5px;
-    margin-left:176.5px;
+    margin-right: 176px;
+    margin-left:176px;
     gap:220px;
     font-family:'Yu gothic';
     font-size:13px;
     padding-top: 10px;
 }
+.emailbar{
+    width:210px;
+}
+.signup{
+    padding-left: 10px;
+}
+.signupbutton{
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.footlink > span {
+    text-decoration: underline;
+    padding-right: 5px;   
+}
+.emailus{
+    text-decoration: underline; 
+}
+.footlink  .footerlinks:not(:last-child)::after{
+    content:'|';
+    padding-left: 5px;
+    text-decoration: none;
+}   
