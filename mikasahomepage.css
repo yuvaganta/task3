@@ -4,11 +4,11 @@ body{
 }
 .logobar{
     display:flex;
-    gap:251px;
+    gap:325px;
     align-items:center;
-    margin-left: 185.5px;
-    margin-right: 196.5px;
-    width:1110px;
+    margin-right: 176.5px;
+    margin-left:166.5px;
+    width:1149px;
 }
 .accountsection{
     display:flex;
@@ -25,22 +25,40 @@ body{
 }
 .navigationbar{
     display:flex;
-    gap:10px;
+    gap:15px;
     background-color:rgb(215, 215, 213);
-    padding: 8px 196.5px;
-    width:1110px;
+    padding: 3px 176.5px;
+    width:1160px;
     font-family: verdana;
-    font-size:15px;
+    font-size:13.6px;
+    height:35px;
     align-items:center;
+    
 }
-.navigationbar .navigationitem:not(:last-child){
+.navigationbar{
+    border-bottom:1px solid rgb(215, 215, 213);
+    border-top:1px solid rgb(215, 215, 213); 
+}
+.navigationitem{
+   
+    padding-top: 13px;
+}
+.navigationbar > .navigationitem:not(:last-child){
     border-right: 1px solid white;
-    padding-right: 10px;
+    
+    padding-right: 15px;
+    height:35px;
+}
+.searchbartop{
+  padding-left:100px;
+}
+.searchbartop > input{
+    width:185px;
 }
 .offersbar{
     display:flex;
-    margin-right: 196.5px;
-    margin-left:196.5px;
+    margin-right: 176.5px;
+    margin-left:176.5px;
     gap:230px;
     font-family:'Yu gothic';
     align-items:center;
@@ -55,6 +73,11 @@ body{
     display:flex;
     gap:35px;
 }
+.offers > div:not(:first-child)::before{
+    content: '◦';
+    padding-right:15px;
+    
+}
 .bridalimage{
     padding: 0 15px;;
 }
@@ -65,8 +88,8 @@ left: 15px;
 }
 .about{
     display:flex;
-    margin-right: 196.5px;
-    margin-left:196.5px;
+    margin-right: 176.5px;
+    margin-left:176.5px;
     gap:90px;
     border: 10px solid white;
     margin-top: 9px;
@@ -81,7 +104,7 @@ left: 15px;
 }
 .tableimage > img{
     object-fit: fill;
-    width: 780px;
+    width: 820px;
     height: 530px;
     padding-bottom: 0;
 }
@@ -108,35 +131,86 @@ left: 15px;
     padding-top: 0;
 }
 .typeoftables:not(:last-child){
-    border-bottom:1px groove white;
+    border-bottom:1px groove darkgray;
     margin-left: 0;
 }
 .typeoftables{
     padding-bottom: 5px;
     padding-top:5px;
 }
+.seemore{
+    padding-top: 20px;
+}
+.seemore > a{
+    color:darkgray;
+    font-size: 13px;
+}
+.dressyourtable > p{
+    color:darkgray;
+    font-size: 14px;
+}
 .collection{
     display:flex;
-    margin-right: 196.5px;
-    margin-left:196.5px;
+    margin-right: 176.5px;
+    margin-left:176.5px;
     background-color: white;
     border:8px solid rgba(0,0,0,0.93);
-    gap:30px;
+    gap:18px;
+    height: 196px;
     font-family:'Yu gothic';
-    
+    font-size:15px;
 }
 #frames{
-    display:flex;
-    padding-left: 20px;
-}
 
+    width:380px;
+}
+#plates{
+    width:380px;
+}
 #glasses{
-    padding-left: 50px;
+    width:380px;
+    padding-left: 10px;
+    padding-top:30px;
+}
+#glasses ,#plates{
+    border-right: 1px solid grey;
+}
+#glasses > img{
+    position: absolute;
+    bottom: -185px;
+}
+.stemware{
+    position: relative;
+    left: 223px;
+}
+.glassmatter{
+    position: absolute;
+    bottom: -126px;
+}
+.platematter{
+    position: absolute;
+    bottom: -126px;
+}
+#plates > img{
+    position: absolute;
+    bottom: -185px;
+}
+.homeaccents{
+    position: relative;
+    left:200px;
+}
+#frames > img{
+    position: absolute;
+    right: 194px;
+    bottom: -171px;
 }
 .foot{
     display:flex;
-    margin-right: 196.5px;
-    margin-left:196.5px;
-    gap:180px;
+    color:darkgray;
+    margin-right: 176.5px;
+    margin-left:176.5px;
+    gap:220px;
+    font-family:'Yu gothic';
+    font-size:13px;
     padding-top: 10px;
 }
